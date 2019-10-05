@@ -22,7 +22,7 @@ Create Empty ASP.NET Core project. Create cutom middleware class and add it to t
 04_Logging
 Create WebAPI project using `dotnet new webapi` command. Add fallowing changes to the app:
 - Add logging to Controller's action and log info about request origin
-- Add logging to Startup class and log some message
+- Log some message in Configure method in Startup class
 - *Add logging to Program class and log something similar to "App is starting!"
 
 05_Logging
