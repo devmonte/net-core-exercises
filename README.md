@@ -28,4 +28,17 @@ Create WebAPI project using `dotnet new webapi` command. Add fallowing changes t
 05_Logging
 Create WebAPI project using `dotnet new webapi` command or use one from exercise 04_Logging. Add fallowing changes to the app:
 - Add Third-party logging provider
-- Configure it to log messeages into files.
+- Configure it to log messeages into file.
+
+06_Configuration
+Create WebAPI project using `dotnet new webapi` command. Add fallowing changes to the app:
+- Inject interface IConfiguration to scaffolded Controller 
+- Read from configuration file and return value as an response to Controller's action.
+- Add another COntroller's action that will return value from configuration file depends on Environment!
+
+06_Configuration
+Create WebAPI project using `dotnet new webapi` command. Add fallowing changes to the app:
+- Inject interface IConfiguration to scaffolded Controller 
+- Add custom config file
+- Bind custom config file to class during app startup
+- Consume data from custom config using binded class in Controller's action
