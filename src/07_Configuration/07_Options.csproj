@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>_07_Configuration</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="weather.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="weather.json" />
+  </ItemGroup>
+
+</Project>

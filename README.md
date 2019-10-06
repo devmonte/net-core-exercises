@@ -35,10 +35,11 @@ Create WebAPI project using `dotnet new webapi` command. Add fallowing changes t
 - Inject interface IConfiguration to scaffolded Controller 
 - Read from configuration file and return value as an response to Controller's action.
 - Add another COntroller's action that will return value from configuration file depends on Environment!
+- Read from Env variables
 
-06_Configuration
+07_Configuration
 Create WebAPI project using `dotnet new webapi` command. Add fallowing changes to the app:
-- Inject interface IConfiguration to scaffolded Controller 
-- Add custom config file
-- Bind custom config file to class during app startup
-- Consume data from custom config using binded class in Controller's action
+- Add separate json file with some data in it,
+- Add json file to App Configuration,
+- Bind data from json file to class using Configure method in Startup class,
+- Use binded class in COntroller by injectin IOptionsMOnitor<T> interface
