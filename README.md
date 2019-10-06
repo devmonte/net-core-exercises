@@ -37,7 +37,7 @@ Create WebAPI project using `dotnet new webapi` command. Add fallowing changes t
 - Add another COntroller's action that will return value from configuration file depends on Environment!
 - Read from Env variables
 
-07_Configuration
+07_Options
 Create WebAPI project using `dotnet new webapi` command. Add fallowing changes to the app:
 - Add separate json file with some data in it,
 - Add json file to App Configuration,
