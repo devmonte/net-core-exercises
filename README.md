@@ -43,3 +43,10 @@ Create WebAPI project using `dotnet new webapi` command. Add fallowing changes t
 - Add json file to App Configuration,
 - Bind data from json file to class using Configure method in Startup class,
 - Use binded class in COntroller by injectin IOptionsMOnitor<T> interface
+
+08_ViewInMVC
+Create MVC project using `dotnet new mvc` command or Visual Studio. Add fallowing changes to the app:
+- Add new empty controller and 3 different actions
+- Every action should return different view
+- Add partial view to one of the views
+- Add different layout to views for created controller
