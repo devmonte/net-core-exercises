@@ -44,9 +44,20 @@ Create WebAPI project using `dotnet new webapi` command. Add fallowing changes t
 - Bind data from json file to class using Configure method in Startup class,
 - Use binded class in COntroller by injectin IOptionsMOnitor<T> interface
 
-08_ViewInMVC
+08_Routing
 Create MVC project using `dotnet new mvc` command or Visual Studio. Add fallowing changes to the app:
-- Add new empty controller and 3 different actions
+- Add new MVC controller with action that return some string value
+- Add dedicated convention-based routing in Startup class for created controller
+- Add new WebAPI controller with attribute routing and 3 actions:
+	- First action with [HttpGet("<choose value here>")] attribute
+	- Second action with [Route("<choose value here>")] attribute
+	- Third action with [Route("/<choose value here>")] attribute
+- Change Starup class to handle attribute routing
+- Check if all actions are accessible
+
+09_ViewsInMvc
+Create MVC project using `dotnet new mvc` command or Visual Studio. Add fallowing changes to the app:
+- Add new empty MVC controller and 3 different actions
 - Every action should return different view
 - Add partial view to one of the views
 - Add different layout to views for created controller
