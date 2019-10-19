@@ -8,6 +8,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
+using _12_LibraryCRUD.Data;
+using _12_LibraryCRUD.Services;
 
 namespace _12_LibraryCRUD
 {
@@ -24,6 +28,9 @@ namespace _12_LibraryCRUD
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<LibraryContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Library")));
+
+            services.AddTransient<ISeedDataService, SeedDataService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

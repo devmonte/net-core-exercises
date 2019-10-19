@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _12_LibraryCRUD.Models
+namespace _12_LibraryCRUD.Data
 {
     public class Book
     {
@@ -16,6 +16,6 @@ namespace _12_LibraryCRUD.Models
         public int ClientId { get; set; }
         public Client Client { get; set; }
 
-        public IEnumerable<BookAuthor> BookAuthors { get; set; }
+        public List<BookAuthor> BookAuthors { get; set; }
     }
 }

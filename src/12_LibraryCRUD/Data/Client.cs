@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _12_LibraryCRUD.Models
+namespace _12_LibraryCRUD.Data
 {
     public class Client
     {
