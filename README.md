@@ -72,4 +72,12 @@ Create MVC project using `dotnet new mvc` command or Visual Studio. Add fallowin
 - Third action should pass data to view using strongly typed model
 - *Add partial view to every view and pass data
 
-#### 11_RazorAndTagHelpers
+#####_11_TagHelpers
+
+
+
+##### 12_RazorAndTagHelpers
+
+
+
+#####_13_LibraryCRUD
