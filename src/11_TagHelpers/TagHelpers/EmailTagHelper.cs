@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _11_TagHelpers.TagHelpers
+namespace CustomTags
 {
     public class EmailTagHelper : TagHelper
     {

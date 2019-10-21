@@ -1,1 +1,15 @@
-﻿
+﻿@model ExampleViewModel
+@using CustomTags
+@addTagHelper *, CustomTags
+
+
+<form asp-controller="Example" asp-action="Submit" class="form-group">
+    <label asp-for="Age"></label>
+    <input asp-for="Age" />
+    <label asp-for="Time"></label>
+    <input asp-for="Time" />
+    <button type="submit">Test</button>
+</form>
+
+
+<email>monte</email>
