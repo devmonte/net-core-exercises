@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using _11_TagHelpers.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -33,6 +34,12 @@ namespace _10_ViewsAndData.Controllers
         public IActionResult Index3()
         {
             return View();
+        }
+
+        [HttpPost]
+        public string Submit(ExampleViewModel model)
+        {
+            return model.Age.ToString();
         }
 
     }
