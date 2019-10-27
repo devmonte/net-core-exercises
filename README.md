@@ -97,3 +97,18 @@ Create MVC project using `dotnet new mvc` command or Visual Studio. Add fallowin
 
 ##### 13_LibraryCRUD
 Using ASP.NET Core MVC create an app, that will have fallowing functionality:
+- 3 tables:
+  - Authors
+  - Books
+  - Clients
+- Relations:
+  - Author can have many books
+  - Book can have many authors
+  - Client can borrow many boks
+- Create service for seeding data
+- Create controllers and views for CRUD operations
+
+##### 14_LibraryCRUD
+Using created app from exercise #14 add following changes:
+- Add model validation
+- 
