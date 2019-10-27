@@ -72,12 +72,28 @@ Create MVC project using `dotnet new mvc` command or Visual Studio. Add fallowin
 - Third action should pass data to view using strongly typed model
 - *Add partial view to every view and pass data
 
-#####_11_TagHelpers
-
-
+##### 11_TagHelpers
+Create MVC project using `dotnet new mvc` command or Visual Studio. Add fallowing changes to the app:
+- Add new empty MVC controller and 3 different actions
+- Every action should return different view
+- Inevery view use at least one different tag helper:
+  -anchor tag helper
+  -environment tag helper
+  -form tag helper
+- Create custom tag helper
 
 ##### 12_RazorAndTagHelpers
+Create MVC project using `dotnet new mvc` command or Visual Studio. Add fallowing changes to the app:
+- Add new empty MVC controller and 4 different actions:
+  - Index
+  - IfStatement
+  - ForEachLoop
+  - Environment
+- Add link to Index action to default Layout using anchor tag helper
+- Add class Student with at least 3 public properties
+- Add view for Index action and create there object of Student class using data from ViewData or using casting
+- Add view for IfStatement action and create there if else statement based on data from ViewBag and showing different buttons depends on data
+- 
 
-
-
-#####_13_LibraryCRUD
+##### 13_LibraryCRUD
+Using ASP.NET Core MVC create an app, that will have fallowing functionality:

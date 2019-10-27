@@ -9,6 +9,7 @@ namespace _12_LibraryCRUD.Data
     public class BookAuthor
     {
         public Guid BookAuthorId { get; set; }
+        
         public Guid AuthorId { get; set; }
         public Author Author { get; set; }
 

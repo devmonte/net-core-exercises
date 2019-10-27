@@ -1,8 +1,32 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model BorrowBookViewModel
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row">
+
+    <div class="col-4">
+        <a asp-controller="Books" asp-action="Index">
+            <button class="btn btn-primary">Books</button>
+        </a>
+    </div>
+
+    <div class="col-4">
+        <a asp-controller="Authors" asp-action="Index">
+            <button class="btn btn-primary">Authors</button>
+        </a>
+
+    </div>
+
+    <div class="col-4">
+        <a asp-controller="Clients" asp-action="Index">
+            <button class="btn btn-primary">Clients</button>
+        </a>
+
+    </div>
 </div>
+
+<form asp-controller="Home" asp-action="Borrow">
+    <label asp-for="BookId"></label>
+    <select class="form-control" asp-for="BookId" asp-items="@(new SelectList(Model.Books, "BookId", "Title"))"></select>
+    <label asp-for="ClientId"></label>
+    <select class="form-control" asp-for="ClientId" asp-items="@(new SelectList(Model.Clients, "ClientId", "Name"))"></select>
+    <input type="submit" value="Create" class="btn btn-primary" />
+</form>
