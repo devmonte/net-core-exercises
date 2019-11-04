@@ -81,3 +81,7 @@ Create MVC project using `dotnet new mvc` command or Visual Studio. Add fallowin
 
 
 #####_13_LibraryCRUD
+
+
+
+#####_13_LibraryCRUDWithIdentity
